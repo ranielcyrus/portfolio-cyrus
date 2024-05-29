@@ -1,0 +1,311 @@
+body {
+    background-color:#2d3436;
+    margin: 0;
+    padding: 0;
+}
+
+/* makes the text have animated changing colors */
+@keyframes animatedcolor {
+    0%
+    {
+        color: #55efc4;
+    }
+    20%
+    {
+        color: #fab1a0;
+    }
+    40%
+    {
+        color: #0abde3;
+    }
+    60%
+    {
+        color: #a29bfe;
+    }
+    80%
+    {
+        color: #ffeaa7;
+    }
+    100%
+    {
+        color: #fd79a8;
+    }
+}
+
+/* Header */
+.header {
+    margin: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.header-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3px;
+    background-color: #363e41;
+    border: solid 1px #5b6d73;
+}
+
+/* logo section in header */
+.logo {
+    margin: 5px;
+}
+.logo:hover {
+    transition: 0.3s;
+    border: solid 1px #a2efe0;
+    border-radius: 15px;
+}
+
+/* nav section in header */
+.nav ul{
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+}
+
+.nav a {
+    font-family: "Space Grotesk", sans-serif;
+    font-style: normal;
+    font-size: 1.5rem;
+
+    padding: 5px;
+    margin: 5px;
+    text-decoration: none;
+    color: #000000;
+    font-weight: 200;
+}
+
+.nav a:hover {
+    transition: 0.3s;
+    color: #fff9f9;
+    border: solid 4px #a2efe0;
+    border-radius: 15px;
+} 
+
+/* home/landing page */
+.home-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro {
+    font-size: 6vh;
+}
+
+.intro h2, .intro h3 {
+    font-family: "Amatic SC", sans-serif;
+    font-weight: 650;
+    font-style: normal;
+    color: #000000;
+}
+
+.intro h3:hover {
+      /* change color text on hover */
+    color: #7aebd1;
+      /* to make the text glow on hover */
+    text-shadow: 0 0 10px #7aebd1,
+    0 0 20px #7aebd1,
+    0 0 40px #7aebd1,
+    0 0 80px #7aebd1,
+    0 0 120px #7aebd1,
+    0 0 180px #7aebd1;
+}
+
+.intro h2:hover {
+    /* change color text on hover */
+    color: #89caf5;
+    /* to make the text glow on hover */
+    text-shadow: 0 0 10px #89caf5,
+     0 0 20px #89caf5,
+     0 0 40px #89caf5,
+     0 0 80px #89caf5,
+     0 0 120px #89caf5,
+     0 0 180px #89caf5;
+}
+
+.cyrus:hover {
+    color: #f40a0a;
+    /* to make the text glow on hover */
+    text-shadow: 0 0 10px #f40a0a,
+     0 0 20px #f40a0a,
+     0 0 40px #f40a0a,
+     0 0 80px #f40a0a,
+     0 0 120px #f40a0a,
+     0 0 180px #f40a0a;
+}
+
+/* about me section */
+.about-container {
+    height: 100vh;
+    padding-top:7%;
+}
+
+.about-me-text {
+    display: flex;
+    justify-content: center;
+    animation: animatedcolor infinite 12s;
+}
+
+.about-contents {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.about-text {
+    padding: 20px;
+    margin: 10px;
+}
+
+.about-text:hover {
+    border: 1px solid #55efc4;
+    border-radius: 20px;
+    box-shadow: 0 0 10px #7aebd1,
+    0 0 20px #7aebd1;
+}
+
+.about-text p {
+    width: 500px;
+    font-family: "Amatic SC", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    color: #000000;
+}
+
+.about-text p:hover { 
+    animation: animatedcolor infinite 3s; 
+}
+
+/* skills section */
+.skill-container {
+    height: 105vh;
+    padding-top:7%;
+}
+
+.skill-text {
+    display: flex;
+    justify-content: center;
+    animation: animatedcolor infinite 12s;
+}
+
+.icons-container {
+    display: grid;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin: 50px auto;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 2fr));
+    gap: 10px;
+}
+
+.icon {
+    padding-bottom:10px;
+}
+
+.icon span {
+    display: flex;
+    color: #ffffff;
+}
+
+/* projects section */
+.projects-container{
+    padding-top:7%;
+}
+
+.project-text {
+    display: flex;
+    justify-content: center;
+    animation: animatedcolor infinite 12s;
+}
+
+.project-flex-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.project-images {
+    display: grid;
+    margin: 50px auto;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+}
+
+.project-images img {
+    margin: 10px;
+}
+
+/* contacts section */
+.contact-container {
+    padding-top:6%;
+}
+
+.contact-text {
+    display: flex;
+    justify-content: center;
+    animation: animatedcolor infinite 12s;
+}
+
+.contact-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.contact-contents {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-icon{
+    display: flex;
+    justify-content: center;
+}
+
+.email-form {
+    margin: 10px;
+    border: solid 1px #fc0606;
+    border-radius: 5%;
+    padding: 2rem;
+    background-color: #fffefe;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.textbox {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.textbox input{
+    margin: 5px;
+    width: 300px;
+    height: 25px;   
+}
+
+.textbox textarea {
+    margin: 5px;
+    width: 300px;
+    height: 150px;
+    resize: none;
+}
+
+/* footer section */
+.footer {
+    color: #ffffff;
+    background-color: #1e272e;
+}
+
+.credits {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
